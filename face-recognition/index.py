@@ -5,6 +5,7 @@ d = face_cascade = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_fr
 
 originalImage = cv2.imread('image1.png')
 x = cv2.cvtColor(originalImage, cv2.COLOR_RGB2GRAY)
+# x = cv2.cvtColor(originalImage, cv2.COLOR_BGR2GRAY)
 
 face = d.detectMultiScale(x, scaleFactor=1.1, minNeighbors=5)
 
